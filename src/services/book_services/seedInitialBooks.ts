@@ -8,7 +8,7 @@ interface bookParams {
     description: string,
     imageUrl: string,
     category: string,
-    owner: number,
+    owner: string,
     addingDate: number,
 }
 
@@ -29,7 +29,7 @@ export const seedInitialBooks = async () => {
       "The C Programming Language (1978) is the seminal book on C by its creators, introducing the language’s syntax, semantics, and idioms.", // Source: Wikipedia :contentReference[oaicite:0]{index=0}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780131103627-M.jpg", // Open Library Covers API :contentReference[oaicite:1]{index=1}
     category: "Programming",
-    owner: 1,
+    owner: "68f34d4f4bdfe4f9a9c10a07" ,
     addingDate: Date.now() - 1747256400000,
   },
   // الكتب الجديدة المضافة
@@ -41,7 +41,7 @@ export const seedInitialBooks = async () => {
       "Clean Code (2008) teaches principles and best practices for writing readable, maintainable, and refactorable code.", // Source: Wikipedia :contentReference[oaicite:2]{index=2}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg", // :contentReference[oaicite:3]{index=3}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -52,7 +52,7 @@ export const seedInitialBooks = async () => {
       "The Pragmatic Programmer (1999) covers a broad range of topics in software engineering, from career development to architectural techniques.", // Source: Wikipedia :contentReference[oaicite:4]{index=4}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg", // :contentReference[oaicite:5]{index=5}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -63,7 +63,7 @@ export const seedInitialBooks = async () => {
       "Design Patterns (1994) catalogs 23 classic solutions to common object‑oriented design problems.", // Source: Wikipedia :contentReference[oaicite:6]{index=6}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780201633610-M.jpg", // :contentReference[oaicite:7]{index=7}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -74,7 +74,7 @@ export const seedInitialBooks = async () => {
       "Introduction to Algorithms (1990) is a comprehensive textbook covering a broad range of algorithms in depth.", // Source: Wikipedia :contentReference[oaicite:8]{index=8}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780262033848-M.jpg", // :contentReference[oaicite:9]{index=9}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -85,7 +85,7 @@ export const seedInitialBooks = async () => {
       "Code Complete (1993) is a practical handbook of software construction, covering coding techniques and best practices.", // Source: Wikipedia :contentReference[oaicite:10]{index=10}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780735619678-M.jpg", // :contentReference[oaicite:11]{index=11}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -96,7 +96,7 @@ export const seedInitialBooks = async () => {
       "Refactoring (1999) presents techniques for restructuring existing code without changing its external behavior.", // Source: Wikipedia :contentReference[oaicite:12]{index=12}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780201485677-M.jpg", // :contentReference[oaicite:13]{index=13}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -107,7 +107,7 @@ export const seedInitialBooks = async () => {
       "JavaScript: The Good Parts (2008) distills the core features of JavaScript that make it reliable and maintainable.", // Source: Wikipedia :contentReference[oaicite:14]{index=14}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780596517748-M.jpg", // :contentReference[oaicite:15]{index=15}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -118,7 +118,7 @@ export const seedInitialBooks = async () => {
       "You Don't Know JS (2014) dives deep into JavaScript’s scope and closure mechanisms.", // Source: Wikipedia :contentReference[oaicite:16]{index=16}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781449335588-M.jpg", // :contentReference[oaicite:17]{index=17}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -129,7 +129,7 @@ export const seedInitialBooks = async () => {
       "Eloquent JavaScript (2011) is a modern introduction to programming using JavaScript.", // Source: Wikipedia :contentReference[oaicite:18]{index=18}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781593279509-M.jpg", // :contentReference[oaicite:19]{index=19}
     category: "Programming",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
 
@@ -142,7 +142,7 @@ export const seedInitialBooks = async () => {
       "Pride and Prejudice (1813) follows Elizabeth Bennet as she learns about the repercussions of hasty judgments.", // Source: Wikipedia :contentReference[oaicite:20]{index=20}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg", // :contentReference[oaicite:21]{index=21}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -153,7 +153,7 @@ export const seedInitialBooks = async () => {
       "Moby-Dick (1851) narrates Captain Ahab’s obsessive quest for revenge against the white whale.", // Source: Wikipedia :contentReference[oaicite:22]{index=22}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780142437247-M.jpg", // :contentReference[oaicite:23]{index=23}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -164,7 +164,7 @@ export const seedInitialBooks = async () => {
       "Brave New World (1932) depicts a technologically advanced future shaped by genetic engineering and social conditioning.", // Source: Wikipedia :contentReference[oaicite:24]{index=24}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780060850524-M.jpg", // :contentReference[oaicite:25]{index=25}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -175,7 +175,7 @@ export const seedInitialBooks = async () => {
       "The Catcher in the Rye (1951) follows Holden Caulfield’s experiences in New York City.", // Source: Wikipedia :contentReference[oaicite:26]{index=26}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780316769488-M.jpg", // :contentReference[oaicite:27]{index=27}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -186,7 +186,7 @@ export const seedInitialBooks = async () => {
       "The Hobbit (1937) follows Bilbo Baggins’s quest to help dwarves reclaim their mountain home from Smaug.", // Source: Wikipedia :contentReference[oaicite:28]{index=28}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780547928227-M.jpg", // :contentReference[oaicite:29]{index=29}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -197,7 +197,7 @@ export const seedInitialBooks = async () => {
       "To Kill a Mockingbird (1960) deals with racial injustice in the Deep South through Scout Finch’s eyes.", // Source: Wikipedia :contentReference[oaicite:30]{index=30}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780060935467-M.jpg", // :contentReference[oaicite:31]{index=31}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -208,7 +208,7 @@ export const seedInitialBooks = async () => {
       "Nineteen Eighty-Four (1949) is a dystopian novel about a totalitarian regime’s mass surveillance.", // Source: Wikipedia :contentReference[oaicite:32]{index=32}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg", // :contentReference[oaicite:33]{index=33}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -219,7 +219,7 @@ export const seedInitialBooks = async () => {
       "The Great Gatsby (1925) depicts Jay Gatsby’s obsession with Daisy Buchanan in the Jazz Age.", // Source: Wikipedia :contentReference[oaicite:34]{index=34}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg", // :contentReference[oaicite:35]{index=35}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -230,7 +230,7 @@ export const seedInitialBooks = async () => {
       "The Alchemist (1988) follows shepherd Santiago on a journey to the Egyptian pyramids after dreaming of treasure.", // Source: Wikipedia :contentReference[oaicite:36]{index=36}
     imageUrl: "https://covers.openlibrary.org/b/isbn/0062502174-M.jpg", // :contentReference[oaicite:37]{index=37}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -241,7 +241,7 @@ export const seedInitialBooks = async () => {
       "The Lion, the Witch and the Wardrobe (1950) follows four siblings who discover the magical land of Narnia.", // Source: Wikipedia :contentReference[oaicite:38]{index=38}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780064471046-M.jpg", // :contentReference[oaicite:39]{index=39}
     category: "Stories",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
 
@@ -254,7 +254,7 @@ export const seedInitialBooks = async () => {
       "The Emperor of All Maladies (2010) is a biography of cancer and a medical history of its treatment.", // Source: Wikipedia :contentReference[oaicite:42]{index=42}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781439170915-M.jpg", // :contentReference[oaicite:43]{index=43}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -265,7 +265,7 @@ export const seedInitialBooks = async () => {
       "The Man Who Mistook His Wife for a Hat (1985) is a collection of neurological case histories.", // Source: Wikipedia :contentReference[oaicite:44]{index=44}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780684853949-M.jpg", // :contentReference[oaicite:45]{index=45}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -276,7 +276,7 @@ export const seedInitialBooks = async () => {
       "Being Mortal (2014) examines end-of-life care and the medical profession’s limitations.", // Source: Wikipedia :contentReference[oaicite:48]{index=48}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780805095159-M.jpg", // :contentReference[oaicite:49]{index=49}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -287,7 +287,7 @@ export const seedInitialBooks = async () => {
       "Clinical Microbiology Made Ridiculously Simple (2015) provides a concise overview of key microbiology concepts.", // Source: Open Library :contentReference[oaicite:0]{index=0}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781935660330-L.jpg", // Open Library Covers API :contentReference[oaicite:1]{index=1}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -298,7 +298,7 @@ export const seedInitialBooks = async () => {
       "How Learning Works (2010) presents seven principles for effective learning.", // Source: Amazon :contentReference[oaicite:2]{index=2}
     imageUrl: "https://m.media-amazon.com/images/I/71hQ9miNakL._SL1500_.jpg", // Open Library Covers API :contentReference[oaicite:3]{index=3}
     category: "Educational",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -310,7 +310,7 @@ export const seedInitialBooks = async () => {
     imageUrl:
       "https://api.rbteach.com/uploads/TST_7_Front_cover_cropped_41f5e725e4.jpg", // Open Library Covers API :contentReference[oaicite:5]{index=5}
     category: "Educational",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -321,7 +321,7 @@ export const seedInitialBooks = async () => {
       "Teaching to Transgress (1994) links education to liberation and social justice.", // Source: Amazon :contentReference[oaicite:6]{index=6}
     imageUrl: "https://covers.openlibrary.org/b/isbn/0415908086-L.jpg", // Open Library Covers API :contentReference[oaicite:7]{index=7}
     category: "Educational",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -332,7 +332,7 @@ export const seedInitialBooks = async () => {
     imageUrl:
       "https://covers.storytel.com/jpg-640/9781848584938.91c78bc1-00ce-416e-b46e-675c2d8879d7?optimize=high&quality=70&width=600", // Wikimedia Commons :contentReference[oaicite:9]{index=9}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -344,7 +344,7 @@ export const seedInitialBooks = async () => {
     imageUrl:
       "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqN1jZ9GTh0DUoTx1blABi4whZHInNCxmv4g1dQpl-k6fd5elN", // Open Library Covers API :contentReference[oaicite:11]{index=11}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -355,7 +355,7 @@ export const seedInitialBooks = async () => {
       "The Body (2019) offers a tour of the human body’s functions and curiosities.", // Source: Amazon :contentReference[oaicite:12]{index=12}
     imageUrl: "https://covers.openlibrary.org/b/isbn/0385539304-L.jpg", // Open Library Covers API :contentReference[oaicite:13]{index=13}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -366,7 +366,7 @@ export const seedInitialBooks = async () => {
       "Pathophysiology Made Incredibly Easy (2012) simplifies complex disease mechanisms.", // Source: Amazon :contentReference[oaicite:14]{index=14}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781451146233-L.jpg", // OpenS_Library Covers API :contentReference[oaicite:15]{index=15}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -377,7 +377,7 @@ export const seedInitialBooks = async () => {
       "Robbins and Cotran (2015) is an authoritative textbook on pathology.", // Source: Elsevier :contentReference[oaicite:16]{index=16}
     imageUrl: "http://gomerpedia.org/images/c/cd/Robbins_and_Cotran.jpg", // Open Library Covers API :contentReference[oaicite:17]{index=17}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -388,7 +388,7 @@ export const seedInitialBooks = async () => {
       "Harrison’s (2018) is a comprehensive guide to internal medicine.", // Source: Wikipedia :contentReference[oaicite:56]{index=56}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780071802154-M.jpg", // :contentReference[oaicite:57]{index=57}
     category: "Medical",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
 
@@ -401,7 +401,7 @@ export const seedInitialBooks = async () => {
       "Pedagogy of the Oppressed (1968) discusses education as the practice of freedom.", // Source: Wikipedia :contentReference[oaicite:60]{index=60}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780826412768-M.jpg", // :contentReference[oaicite:61]{index=61}
     category: "Educational",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -412,7 +412,7 @@ export const seedInitialBooks = async () => {
       "Make It Stick (2014) examines cognitive science research to improve learning.", // Source: Wikipedia :contentReference[oaicite:68]{index=68}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780674729018-M.jpg", // :contentReference[oaicite:69]{index=69}
     category: "Educational",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -423,7 +423,7 @@ export const seedInitialBooks = async () => {
       "Visible Learning (2008) synthesizes over 800 meta-analyses on student achievement.", // Source: Wikipedia :contentReference[oaicite:74]{index=74}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780415476188-M.jpg", // :contentReference[oaicite:75]{index=75}
     category: "Educational",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
 
@@ -436,7 +436,7 @@ export const seedInitialBooks = async () => {
       "A Brief History of Time (1988) explains fundamental concepts of cosmology for a general audience.", // Source: Wikipedia :contentReference[oaicite:80]{index=80}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780553380163-M.jpg", // :contentReference[oaicite:81]{index=81}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -447,7 +447,7 @@ export const seedInitialBooks = async () => {
       "Cosmos (1980) explores the universe’s history, science, and humanity’s place in it.", // Source: Wikipedia :contentReference[oaicite:82]{index=82}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780345539434-M.jpg", // :contentReference[oaicite:83]{index=83}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -458,7 +458,7 @@ export const seedInitialBooks = async () => {
       "The Selfish Gene (1976) popularized the gene-centered view of evolution.", // Source: Wikipedia :contentReference[oaicite:84]{index=84}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780192860927-M.jpg", // :contentReference[oaicite:85]{index=85}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -469,7 +469,7 @@ export const seedInitialBooks = async () => {
       "The Gene (2016) traces the history and science of genetics.", // Source: Wikipedia :contentReference[oaicite:86]{index=86}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781476733524-M.jpg", // :contentReference[oaicite:87]{index=87}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -480,7 +480,7 @@ export const seedInitialBooks = async () => {
       "The Origin of Species (1859) introduced the theory of evolution by natural selection.", // Source: Wikipedia :contentReference[oaicite:88]{index=88}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780140439120-M.jpg", // :contentReference[oaicite:89]{index=89}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -491,7 +491,7 @@ export const seedInitialBooks = async () => {
       "Silent Spring (1962) documented the environmental impact of pesticides.", // Source: Wikipedia :contentReference[oaicite:90]{index=90}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780618249060-M.jpg", // :contentReference[oaicite:91]{index=91}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -502,7 +502,7 @@ export const seedInitialBooks = async () => {
       "The Elegant Universe (1999) introduces string theory and modern physics.", // Source: Wikipedia :contentReference[oaicite:94]{index=94}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780393338102-M.jpg", // :contentReference[oaicite:95]{index=95}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -513,7 +513,7 @@ export const seedInitialBooks = async () => {
       "The Fabric of the Cosmos (2004) explores space, time, and the nature of reality.", // Source: Wikipedia :contentReference[oaicite:96]{index=96}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780375727207-M.jpg", // :contentReference[oaicite:97]{index=97}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
@@ -523,7 +523,7 @@ export const seedInitialBooks = async () => {
     description: "The Hidden Reality (2011) examines multiverse theories.", // Source: Wikipedia :contentReference[oaicite:98]{index=98}
     imageUrl: "https://upload.wikimedia.org/wikipedia/en/0/04/TheHiddenReality.jpg", // :contentReference[oaicite:99]{index=99}
     category: "Scientific",
-    owner: 1, // تمت الإضافة
+    owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
 ];

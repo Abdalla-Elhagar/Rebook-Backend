@@ -1,11 +1,17 @@
 import { Response, Request, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import userModel from "../models/user";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+
 
 
 interface ExtendRequest extends Request {
     user?: any
 }
+
 
 
 const validateJWT = ( req:ExtendRequest, res: Response, next: NextFunction )=> {
@@ -23,7 +29,7 @@ const validateJWT = ( req:ExtendRequest, res: Response, next: NextFunction )=> {
         return
     }
 
-    jwt.verify(token, '570d536836959bd77569a1a158f9375a24a9856ef750d1d4a6ca5d4c571dca11c44e7f1e84132f95', async (err,payload) => {
+    jwt.verify( token, process.env.JWT_SECRET!, async (err,payload) => {
         if(err) {
             res.status(403).send("Invalid token")
             return
@@ -38,9 +44,10 @@ const validateJWT = ( req:ExtendRequest, res: Response, next: NextFunction )=> {
             email: string,
             name: string,
             phone: string,
+            _id: string,
         }
 
-        const user = await userModel.findOne({email: userPayload.email}) 
+        const user = await userModel.findOne({_id: userPayload._id}) 
 
         req.user = user
 

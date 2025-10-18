@@ -3,10 +3,10 @@ import bcrypt from "bcrypt";
 import { generateJWT } from "../../utils/generateJWT";
 
 interface registerParams {
-    name: string,
-    email: string,
-    phone: string,
-    password: string,
+  name: string;
+  email: string;
+  phone: string;
+  password: string;
 }
 
 export const register = async ({
@@ -31,5 +31,13 @@ export const register = async ({
   });
   await newUser.save();
 
-  return { data: generateJWT({ email, name, phone }) , statusCode: 200 };
+  const token = generateJWT({
+    name,
+    email: newUser.email,
+    password: hashedPassword,
+    phone: newUser.phone,
+    _id: newUser._id,
+  });
+
+  return { data: token, statusCode: 200 };
 };
