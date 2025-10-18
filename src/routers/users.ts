@@ -1,6 +1,6 @@
 import express from "express";
-import { register } from "../services/register";
-import { login } from "../services/login";
+import { register } from "../services/user_services/register";
+import { login } from "../services/user_services/login";
 
 const router = express.Router();
 

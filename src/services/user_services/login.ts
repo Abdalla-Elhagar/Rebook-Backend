@@ -1,6 +1,6 @@
-import userModel from "../models/user"
+import userModel from "../../models/user"
 import bcrypt from 'bcrypt';
-import { generateJWT } from "../utils/generateJWT";
+import { generateJWT } from "../../utils/generateJWT";
 
 interface loginParams {
     email: string,
