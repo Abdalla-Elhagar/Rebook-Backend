@@ -1,10 +1,10 @@
 import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
-import userRouter from "./routers/users"
+import userRouter from "./routes/users"
 import dotenv from "dotenv";
 import { seedInitialBooks } from "./services/book_services/seedInitialBooks";
-import booksRouter from "./routers/books"
+import booksRouter from "./routes/books"
 dotenv.config();
 
 
