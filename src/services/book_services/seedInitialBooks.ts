@@ -262,7 +262,7 @@ export const seedInitialBooks = async () => {
     bookName: "The Man Who Mistook His Wife for a Hat",
     author: "Oliver Sacks",
     description:
-      "The Man Who Mistook His Wife for a Hat (1985) is a collection of neurological case histories.", // Source: Wikipedia :contentReference[oaicite:44]{index=44}
+      "The Man Who Mistook His Wife for a Hat (1985) is a collection of neurological status histories.", // Source: Wikipedia :contentReference[oaicite:44]{index=44}
     imageUrl: "https://covers.openlibrary.org/b/isbn/9780684853949-M.jpg", // :contentReference[oaicite:45]{index=45}
     category: "Medical",
     owner: "68f34d4f4bdfe4f9a9c10a07" , // تمت الإضافة

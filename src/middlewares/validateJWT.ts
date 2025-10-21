@@ -1,16 +1,14 @@
-import { Response, Request, NextFunction } from "express";
+import { Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import userModel from "../models/user";
 import dotenv from "dotenv";
+import { ExtendRequest } from "../types/ExtendRequest";
 
 dotenv.config();
 
 
 
 
-interface ExtendRequest extends Request {
-    user?: any
-}
 
 
 

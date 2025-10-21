@@ -7,6 +7,7 @@ export interface bookTypes extends Document {
   description: string;
   imageUrl: string;
   category: string;
+  status: string;
   owner: { type: string; ref: string; required: boolean; };
   addingDate: number;
 }
@@ -18,6 +19,7 @@ const bookSchema = new Schema<bookTypes>({
   description: String,
   imageUrl: String,
   category: String,
+  status: String,
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",

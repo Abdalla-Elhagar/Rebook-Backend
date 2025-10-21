@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
 import userRouter from "./routes/users"
+import userBooksRouter from "./routes/userBooks"
 import dotenv from "dotenv";
 import { seedInitialBooks } from "./services/book_services/seedInitialBooks";
 import booksRouter from "./routes/books"
@@ -23,6 +24,7 @@ mongoose.connect(`mongodb+srv://${USER_NAME}:${PASSWORD}@maincluster.9dt5hr9.mon
 
 app.use("/users", userRouter)
 app.use("/books", booksRouter)
+app.use("/user-books", userBooksRouter)
 
 seedInitialBooks()
 
