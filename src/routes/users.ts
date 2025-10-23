@@ -3,6 +3,9 @@ import { register } from "../services/user_services/register";
 import { login } from "../services/user_services/login";
 import userModel from "../models/user";
 import { ExtendRequest } from "../types/ExtendRequest";
+import validateJWT from "../middlewares/validateJWT";
+import { ubdateUserData } from "../services/user_services/updateUserData";
+import { changePassword } from "../services/user_services/changePassword";
 
 
 const router = express.Router();
@@ -27,6 +30,11 @@ router.post("/login", async (req:ExtendRequest, res) => {
 
   res.status(statusCode).json(data);
 });
+
+router.put("/change-user-data", validateJWT, ubdateUserData )
+
+router.put("/change-user-password", validateJWT, changePassword )
+
 
 
 

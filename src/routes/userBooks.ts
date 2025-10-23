@@ -4,6 +4,7 @@ import { ExtendRequest } from "../types/ExtendRequest";
 import bookModel from "../models/book";
 import upload from "../middlewares/upload";
 import { addBook } from "../services/book_services/addBook";
+import { deleteBook } from "../services/book_services/deleteBook";
 
 
 const router = express.Router()
@@ -29,6 +30,8 @@ router.get("/", validateJWT, async (req: ExtendRequest, res) => {
 });
 
 router.post("/addBook", validateJWT, upload.single("image"), addBook)
+
+router.delete("/delete-book", validateJWT, deleteBook)
 
 
 

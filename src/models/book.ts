@@ -13,7 +13,6 @@ export interface bookTypes extends Document {
 }
 
 const bookSchema = new Schema<bookTypes>({
-  id: Number,
   bookName: String,
   author: String,
   description: String,

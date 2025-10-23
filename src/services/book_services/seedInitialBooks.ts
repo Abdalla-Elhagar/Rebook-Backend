@@ -2,7 +2,6 @@ import bookModel from "../../models/book";
 
 
 interface bookParams {
-    id: number,
     bookName: string,
     author: string,
     description: string,
@@ -22,7 +21,7 @@ export const getAllBooks = async () => {
 export const seedInitialBooks = async () => {
   const books:bookParams[] = [
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The C Programming Language",
     author: "Brian W. Kernighan & Dennis M. Ritchie",
     description:
@@ -34,7 +33,7 @@ export const seedInitialBooks = async () => {
   },
   // الكتب الجديدة المضافة
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Clean Code: A Handbook of Agile Software Craftsmanship",
     author: "Robert C. Martin",
     description:
@@ -45,7 +44,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Pragmatic Programmer",
     author: "Andrew Hunt & David Thomas",
     description:
@@ -56,7 +55,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Design Patterns: Elements of Reusable Object‑Oriented Software",
     author: "Erich Gamma, Richard Helm, Ralph Johnson & John Vlissides",
     description:
@@ -67,7 +66,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Introduction to Algorithms",
     author: "Thomas H. Cormen et al.",
     description:
@@ -78,7 +77,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Code Complete",
     author: "Steve McConnell",
     description:
@@ -89,7 +88,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Refactoring: Improving the Design of Existing Code",
     author: "Martin Fowler",
     description:
@@ -100,7 +99,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "JavaScript: The Good Parts",
     author: "Douglas Crockford",
     description:
@@ -111,7 +110,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "You Don't Know JS: Scope & Closures",
     author: "Kyle Simpson",
     description:
@@ -122,7 +121,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Eloquent JavaScript",
     author: "Marijn Haverbeke",
     description:
@@ -135,7 +134,7 @@ export const seedInitialBooks = async () => {
 
   // Stories (10)
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Pride and Prejudice",
     author: "Jane Austen",
     description:
@@ -146,7 +145,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Moby-Dick; or, The Whale",
     author: "Herman Melville",
     description:
@@ -157,7 +156,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Brave New World",
     author: "Aldous Huxley",
     description:
@@ -168,7 +167,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Catcher in the Rye",
     author: "J. D. Salinger",
     description:
@@ -179,7 +178,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Hobbit",
     author: "J. R. R. Tolkien",
     description:
@@ -190,7 +189,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "To Kill a Mockingbird",
     author: "Harper Lee",
     description:
@@ -201,7 +200,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "1984",
     author: "George Orwell",
     description:
@@ -212,7 +211,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     description:
@@ -223,7 +222,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Alchemist",
     author: "Paulo Coelho",
     description:
@@ -234,7 +233,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Lion, the Witch and the Wardrobe",
     author: "C. S. Lewis",
     description:
@@ -247,7 +246,7 @@ export const seedInitialBooks = async () => {
 
   // Medical (10)
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Emperor of All Maladies",
     author: "Siddhartha Mukherjee",
     description:
@@ -258,7 +257,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Man Who Mistook His Wife for a Hat",
     author: "Oliver Sacks",
     description:
@@ -269,7 +268,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Being Mortal",
     author: "Atul Gawande",
     description:
@@ -280,7 +279,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Clinical Microbiology Made Ridiculously Simple",
     author: "Mark T. Gladwin & William Trattler & C. Scott Mahan",
     description:
@@ -291,7 +290,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "How Learning Works",
     author: "Susan A. Ambrose et al.",
     description:
@@ -302,7 +301,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Skillful Teacher",
     author: "Stephen D. Brookfield",
     description:
@@ -314,7 +313,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Teaching to Transgress",
     author: "bell hooks",
     description:
@@ -325,7 +324,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Gray's Anatomy",
     author: "Henry Gray",
     description: "Gray’s Anatomy (1858) is the classic human anatomy textbook.", // Source: Wikipedia :contentReference[oaicite:8]{index=8}
@@ -336,7 +335,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "How Doctors Think",
     author: "Jerome Groopman",
     description:
@@ -348,7 +347,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Body: A Guide for Occupants",
     author: "Bill Bryson",
     description:
@@ -359,7 +358,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Pathophysiology Made Incredibly Easy",
     author: "Lippincott Williams & Wilkins",
     description:
@@ -370,7 +369,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Robbins and Cotran Pathologic Basis of Disease",
     author: "Vinay Kumar et al.",
     description:
@@ -381,7 +380,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Harrison's Principles of Internal Medicine",
     author: "J. Larry Jameson et al.",
     description:
@@ -394,7 +393,7 @@ export const seedInitialBooks = async () => {
 
   // Educational (10)
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Pedagogy of the Oppressed",
     author: "Paulo Freire",
     description:
@@ -405,7 +404,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Make It Stick",
     author: "Peter C. Brown, Henry L. Roediger III & Mark A. McDaniel",
     description:
@@ -416,7 +415,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Visible Learning",
     author: "John Hattie",
     description:
@@ -429,7 +428,7 @@ export const seedInitialBooks = async () => {
 
   // Scientific (10)
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "A Brief History of Time",
     author: "Stephen Hawking",
     description:
@@ -440,7 +439,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Cosmos",
     author: "Carl Sagan",
     description:
@@ -451,7 +450,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Selfish Gene",
     author: "Richard Dawkins",
     description:
@@ -462,7 +461,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Gene: An Intimate History",
     author: "Siddhartha Mukherjee",
     description:
@@ -473,7 +472,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Origin of Species",
     author: "Charles Darwin",
     description:
@@ -484,7 +483,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "Silent Spring",
     author: "Rachel Carson",
     description:
@@ -495,7 +494,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Elegant Universe",
     author: "Brian Greene",
     description:
@@ -506,7 +505,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Fabric of the Cosmos",
     author: "Brian Greene",
     description:
@@ -517,7 +516,7 @@ export const seedInitialBooks = async () => {
     addingDate: Date.now() - 1747256400000, // تمت الإضافة
   },
   {
-    id: Math.floor(Math.random() * 100000000),
+    
     bookName: "The Hidden Reality",
     author: "Brian Greene",
     description: "The Hidden Reality (2011) examines multiverse theories.", // Source: Wikipedia :contentReference[oaicite:98]{index=98}
