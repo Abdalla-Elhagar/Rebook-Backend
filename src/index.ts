@@ -17,7 +17,7 @@ const USER_NAME = process.env.USER_NAME
 const PASSWORD = process.env.PASSWORD
 
 app.use(cors({
-  origin: ["http://localhost:5173","https://abdalla-elhagar.github.io/ReBook/"],
+  origin: ["http://localhost:5173","https://re-book-black.vercel.app/"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
